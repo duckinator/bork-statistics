@@ -1,30 +1,30 @@
 [
   {
     "version": "0.0.1",
-    "count": "121"
-  },
-  {
-    "version": "3.0.0",
-    "count": "414"
+    "count": 121
   },
   {
     "version": "0.0.2",
-    "count": "122"
-  },
-  {
-    "version": "1.0.0",
-    "count": "140"
-  },
-  {
-    "version": "0.0.3",
-    "count": "121"
+    "count": 122
   },
   {
     "version": "2.0.0",
-    "count": "137"
+    "count": 137
+  },
+  {
+    "version": "0.0.3",
+    "count": 121
+  },
+  {
+    "version": "1.0.0",
+    "count": 140
+  },
+  {
+    "version": "3.0.0",
+    "count": 414
   },
   {
     "version": "0.1.0",
-    "count": "121"
+    "count": 121
   }
 ]

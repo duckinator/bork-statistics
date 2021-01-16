@@ -1,18 +1,18 @@
 [
   {
     "version": "0.0.2",
-    "count": "186"
+    "count": 186
   },
   {
     "version": "0.0.1",
-    "count": "169"
-  },
-  {
-    "version": "0.0.3",
-    "count": "187"
+    "count": 169
   },
   {
     "version": "0.1.0",
-    "count": "250"
+    "count": 250
+  },
+  {
+    "version": "0.0.3",
+    "count": 187
   }
 ]
