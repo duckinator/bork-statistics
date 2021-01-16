@@ -1,7 +1,9 @@
 #standardSQL
 
+DECLARE start TIMESTAMP;
 DECLARE start_date DATE;
-SET start_date = DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 1 MONTH);
+SET start = 'YYYY-MM-01';
+SET start_date = DATE(start);
 
 -- Including start_date is a bit of a kludge. It's included in every row,
 -- but realistically we only need it one time.
