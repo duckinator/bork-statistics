@@ -1,12 +1,7 @@
 #standardSQL
 
--- BigQuery, pulling from the PyPi package downloads data.
--- https://packaging.python.org/guides/analyzing-pypi-package-downloads/
-
-DECLARE start TIMESTAMP;
 DECLARE start_date DATE;
-SET start = '2020-12-01';
-SET start_date = DATE(start);
+SET start_date = DATE_TRUNC(CURRENT_DATE(), MONTH);
 
 SELECT file.version, COUNT(*) AS count FROM `the-psf.pypi.file_downloads`
 WHERE file.project = 'bork'
