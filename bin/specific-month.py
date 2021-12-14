@@ -20,7 +20,7 @@ assert month
 
 root_dir = Path(__file__, '..', '..').resolve()
 
-client = bigquery.Client()
+client = bigquery.Client.from_service_account_json(Path.home() / '.bigquery' / 'keys' / 'bork-statistics.json')
 
 query = Path(root_dir, 'queries', 'downloads-specific-month.sql').resolve().read_text()
 query = query.replace('YYYY-MM', month)
