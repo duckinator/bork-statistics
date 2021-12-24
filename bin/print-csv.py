@@ -20,8 +20,15 @@ for file in Path('data/pypi').glob('*'):
 
 versions = sorted(versions)
 
-writer = csv.writer(sys.stdout, delimiter='\t', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+if len(sys.argv) > 1:
+    csvfile = open(sys.argv[1], 'w', newline='')
+else:
+    csvfile = sys.stdout
+
+writer = csv.writer(csvfile, delimiter='\t', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 writer.writerow(['Start Date'] + versions)
 for row_name in table:
     row = table[row_name]
     writer.writerow([row_name] + [row.get(version, 0) for version in versions])
+
+csvfile.close()
